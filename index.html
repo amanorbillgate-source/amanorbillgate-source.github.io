@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billy Website</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+  const toggle = document.getElementById("themeToggle");
+
+  // Load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggle.textContent = "☀️ Light mode";
+  }
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggle.textContent = "☀️ Light mode";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggle.textContent = "🌙 Dark mode";
+    }
+  });
+</script>
+<body>
+
+<header>
+  <h1>Welcome to My Website</h1>
+ <nav class="nav">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="about.html" class="nav-btn">About</a>
+  <a href="gallery.html" class="nav-btn">Gallery</a>
+  <a href="contact.html" class="nav-btn">Contact</a>
+ </nav>
+  <button id="themeToggle" class="theme-toggle">
+  🌙 Dark mode
+</button>
+</header>
+
+<main>
+  <h2>Home</h2>
+  <p>This website is still under process. it is for educational purposes only and to test my half knowledge in web development</p>
+  <p>This is a simple front-end website. No backend. No stress. Just vibes.</p>
+  <p>NOTE: SOME PARTS OF THIS WEBSITE IS CREATED WITH THE HELP OF YOUTUBE VIDEOS AND AND COPILOT</p>
+</main>
+
+<footer>
+  <p>© 2026 Billy</p>
+</footer>
+
+</body>
+</html>

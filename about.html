@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>about</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+  const toggle = document.getElementById("themeToggle");
+
+  // Load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggle.textContent = "☀️ Light mode";
+  }
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggle.textContent = "☀️ Light mode";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggle.textContent = "🌙 Dark mode";
+    }
+  });
+</script>
+<body>
+
+<header>
+  <h1>About Me</h1><nav class="nav">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="about.html" class="nav-btn">About</a>
+  <a href="gallery.html" class="nav-btn">Gallery</a>
+  <a href="contact.html" class="nav-btn">Contact</a>
+</nav>
+  
+  <button id="themeToggle" class="theme-toggle">
+  🌙 Dark mode
+</button>
+</header>
+
+<main>
+  <h2>About me/CV</h2>
+
+  <div class="card">
+    <h3>Personal information</h3>
+    <p>My name is Billy,officially known as Amanor Billgate, and I am a Ghanaian based in Akplabanya,the western part of Ada in the greater Accra Region. I am also a participant of Compassion at the Akplabanya Divine Healers CYDC. You can reach me by phone at +233558057516 or by email at amanorbillgate@gmail.com. I was born on 28 June 2006, and I am a motivated student passionate about procurement, supply chain management, and learning new technologies. </p>
+  </div>
+
+  <div class="card">
+    <h3>Educational background</h3>
+    <p>I am currently pursuing a Bachelor of Science degree in Procurement & Supply Chain Management at the Koforidua Technical University, Koforidua, and I expect to graduate in 2026. Before this, I completed my senior high school education at Ada Senior High School, Ada-Foah, earning my WASSCE certificate in 2022. I also attended Akplabanya Junior High School, Akplabanya, where I obtained my BECE certificate in 2019. Throughout my academic journey, I have consistently focused on developing my skills, and achieving excellence in my studies.</p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Billy</p>
+</footer>
+
+</body>
+</html>
