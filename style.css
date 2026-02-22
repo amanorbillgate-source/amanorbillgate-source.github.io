@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, serif;
   background: #f1f5f9;   /* soft light grey */
   color: #1f2933;
   line-height: 1.6;
@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 5px;
   margin-top: 15px;
 }
 
@@ -34,8 +34,8 @@ header {
   background: #2563eb;      /* calm blue */
   color: white;
   padding: 14px 24px;
-  border-radius: 10px;
-  text-decoration: none;
+  border-radius: 200px;
+  text-decoration:none;
   font-size: 16px;
   min-width: 100px;
   text-align: center;
@@ -67,6 +67,7 @@ main {
   border-radius: 12px;
   margin: 15px 0;
   border-left: 5px solid #2563eb;
+  border-right:5px solid #2563eb;
 }
 
 /* Footer */
@@ -87,8 +88,8 @@ footer {
   }
 
   .nav-btn {
-    font-size: 18px;
-    padding: 16px 26px;
+    font-size: 11px;
+    padding: 10px 11px;
   }
 }
 /* Toggle button */
