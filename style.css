@@ -17,7 +17,7 @@ body {
 header {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
-  padding: 20px 10px;
+  padding: 14px 7px;
   text-align: center;
 }
 
@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 3px;
   margin-top: 15px;
 }
 
@@ -70,15 +70,18 @@ main {
   border-right:5px solid #2563eb;
 }
 
-.box{
-  image-width:400px;
-  image-height:400px;
-  object-fit: cover;
-  border-radius:22px;
-  padding:20px;
   
-  
+.image {
+  width: 100%;
 }
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
 /* Footer */
 footer {
   background: #0f172a;
